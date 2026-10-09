@@ -1,0 +1,22 @@
+package io.github.kokodio.metaljvm.metal;
+
+import java.lang.foreign.ValueLayout;
+
+/**
+ * {@code MTLFunctionOptions}
+ *
+ * @see <a href="https://developer.apple.com/documentation/metal/mtlfunctionoptions">Apple documentation</a>
+ */
+public final class MTLFunctionOptions {
+    public static final ValueLayout LAYOUT = ValueLayout.JAVA_LONG;
+
+    public static final long None = 0L;
+    public static final long CompileToBinary = 1L;
+    public static final long StoreFunctionInMetalPipelinesScript = 2L;
+    public static final long StoreFunctionInMetalScript = 2L;
+    public static final long FailOnBinaryArchiveMiss = 4L;
+    public static final long PipelineIndependent = 8L;
+
+    private MTLFunctionOptions() {
+    }
+}
